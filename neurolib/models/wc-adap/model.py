@@ -14,8 +14,8 @@ class WCModel(Model):
     # init_vars extended by the initial adaptation value: adap_init
     init_vars = ["exc_init", "inh_init", "adap_init", "exc_ou", "inh_ou"]
     #"adap" is added to the output- & state_vars, such that it is saved in the output-dict in self.storeOutputsAndStates in model class.
-    state_vars = ["exc", "inh", "adap", "exc_ou", "inh_ou"]#, "r_e", "r_i"]
-    output_vars = ["exc", "inh", "adap"]#, "r_e", "r_i"]
+    state_vars = ["exc", "inh", "adap", "exc_ou", "inh_ou"]
+    output_vars = ["exc", "inh", "adap"]
     default_output = "exc"
     input_vars = ["exc_ext", "inh_ext"]
     default_input = "exc_ext"
